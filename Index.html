@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    
+    <div class="name-inputs">
+      <input type="text" id="player1-name" placeholder="Enter Player 1 Name">
+      <input type="text" id="player2-name" placeholder="Enter Player 2 Name">
+      <button id="start-game">Start Game</button>
+    </div>
+    
+    <div class="players">
+      <div class="player">
+        <h2>Player 1</h2>
+        <div class="player__symbol">X</div>
+      </div>
+      <div class="player">
+        <h2>Player 2</h2>
+        <div class="player__symbol">O</div>
+      </div>
+    </div>
+    <div class="board-container">
+      <div class="board">
+        <button class="board__cell" data-cell-index="1"></button>
+        <button class="board__cell" data-cell-index="2"></button>
+        <button class="board__cell" data-cell-index="3"></button>
+        <button class="board__cell" data-cell-index="4"></button>
+        <button class="board__cell" data-cell-index="5"></button>
+        <button class="board__cell" data-cell-index="6"></button>
+        <button class="board__cell" data-cell-index="7"></button>
+        <button class="board__cell" data-cell-index="8"></button>
+        <button class="board__cell" data-cell-index="9"></button>
+      </div>
+    </div>
+    <div class="score-card">
+      <h2>Score Card</h2>
+      <div class="score-player" id="player1-score">Player 1: 0</div>
+      <div class="score-player" id="player2-score">Player 2: 0</div>
+    </div>
+    
+
+    <button class="game-restart-btn">Restart Game</button>
+    <div class="popup hide">
+      <p id="message">Sample Message</p>
+      <button class="popup__restart-btn">New Game</button>
+    </div>
+
+  </div>
+
+  <audio id="winSound" src="new-years-eve-in-peru-fireworks-fire-crackers-and-rockets-to-celebrate-the-new-year-pisco-peru-2012-17692.mp3"></audio>
+  <audio id="xMoveSound" src="pop-39222.mp3"></audio>
+  <audio id="oMoveSound" src="pop-94319.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
